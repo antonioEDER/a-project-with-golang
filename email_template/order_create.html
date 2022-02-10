@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/index.css'>
+</head>
+
+<body>
+    <div>
+        <div class="top-email" style=" width: 100%;
+        background: #F7FAFF;">
+            <div class="top-email__img" style="padding: 50px 0 50px 20px;">
+                <img width="120" src="https://res.cloudinary.com/qop/image/upload/c_scale,w_120/v1606527161/logo_fbitao.png" alt="">
+            </div>
+            <div class="separador-blue" style="  width: 100%;
+        height: 0px;
+        border: 1px solid #D6E8FF;"></div>
+
+
+            <div class="top-email__desc" style="
+               padding: 50px 0 30px 20px;
+                max-width: 700px;
+                display: flex;
+                font-family: Helvetica;
+                font-style: normal;
+                line-height: 30px;
+                color: #0AA22B;">
+                <img width="60px" height="60px" src="https://res.cloudinary.com/qop/image/upload/v1606530312/Screenshot_from_2020-11-27_22-24-48_tcv8lp.png" alt="">
+                <div>
+                    <div style="font-weight: bold;
+                font-size: 26px;">Eba recebemos seu pedido número PD-{{.Pedidos_Id}},</div>
+                    <div style="font-size: 25px;">obrigado pela preferência</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="nome-cliente" style="padding: 30px 0 30px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+        color: #2F80ED;">
+            Olá, <b> {{.Nome}}!</b>
+        </div>
+
+        <div class="email-desc" style="   padding: 0px 0 20px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #738079;">
+        Este e-mail é referente a confirmação do seu pedido. Isso mesmo recebemos seu pedido e você poderá ver todos os detalhes no nosso site ou direto no app.        </div>
+
+        <div class="separador-blue" style="  width: 100%;
+        height: 0px;
+        border: 1px solid #EAEAEA;"></div>
+
+        <div style="text-transform: uppercase; margin: 30px 0 0px 20px;color: #828282; font-weight: bold;">STATUS DO PEDIDO</div>
+
+
+        <div style="
+        margin: 30px 0 0px 20px;
+        width: 80%;
+        height: 75px;
+        background: #F2F2F2;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        border-radius: 6px;">
+
+            <div style="
+            padding: 20px;
+            display: flex;
+            font-family: Helvetica;
+            font-style: normal;
+            color: #737880;">
+                <img height="30px" src="https://res.cloudinary.com/qop/image/upload/v1606570757/Screenshot_from_2020-11-28_09-39-00_b9pr1j.png" alt="">
+                <div style="margin-left: 10px;">
+                    <div style="font-size: 12px;">Pedido recebido</div>
+                    <b style="font-size: 12px;">{{ .Pedido_Data }}</b>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <button style="
+                margin: 30px 0 30px 20px;
+                text-align: center;
+                border-style: hidden;
+                border-color: initial !important;
+                width: 288px;
+                height: 54px;
+                background: #2F80ED;
+                color: white;
+                font-weight: bold;
+                border-radius: 6px;
+           ">
+                <a href="https://qop.net.br/minha-conta" target="_blank" rel="noopener noreferrer" style="
+                        color: white !important;
+                        text-decoration: inherit;
+                    ">
+                    Acompanhar pedido
+                </a>
+            </button>
+        </div>
+
+        <div class="link-email" style="
+            margin: 30px 0 30px 20px;
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: #738079;
+       ">
+            Caso tenha algum problema com seu pedido clique no link abaixo:<br> https://qop.net.br/minha-conta
+        </div>
+
+        <div class="separador-cinza"></div>
+
+
+        <div class="img-inferior" style="
+            margin-top: 10px;
+            max-height: 700px;
+        ">
+            <img src="https://res.cloudinary.com/qop/image/upload/q_auto/v1606527161/email-banner_k0qcmk.jpg" class="img-inferior__img" alt="" style="
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        ">
+        </div>
+
+        <div class="alerta-email">
+            Enviado por <b>qop</b> <br> Se deseja não receber mais mensagens como esta, <b>clique aqui</b>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

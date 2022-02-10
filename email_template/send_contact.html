@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/index.css'>
+</head>
+
+<body>
+    <div>
+        <div class="top-email" style=" width: 100%;
+        height: 330px;
+        background: #F7FAFF;">
+            <div class="top-email__img" style="padding: 50px 0 50px 20px;">
+                <img width="120" src="https://res.cloudinary.com/qop/image/upload/c_scale,w_120/v1606527161/logo_fbitao.png" alt="">
+            </div>
+            <div class="separador-blue" style="  width: 100%;
+        height: 0px;
+        border: 1px solid #D6E8FF;"></div>
+            <div class="top-email__desc" style=" padding: 50px 0 50px 20px;
+                max-width: 700px;
+                display: flex;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 30px;
+                color: #0AA22B;">
+                <img src="https://res.cloudinary.com/qop/image/upload/v1606531870/Screenshot_from_2020-11-27_22-50-57_qhk2xo.png" alt="">
+                <div style="margin-top: 30px;">{{ .Title }}</div>
+            </div>
+        </div>
+
+        <div style="color: #828282;padding: 10px 0 10px 20px ">
+            <div>
+                <b>
+                    <div style="text-transform: uppercase;">NOME:</div>
+                </b>
+                <div>{{ .Nome }}</div>
+            </div>
+        </div>
+
+        <div style="color: #828282;padding: 10px 0 10px 20px">
+            <div>
+                <b>
+                    <div style="text-transform: uppercase;">Telefone ou WhatsApp:</div>
+                </b>
+                <div> {{ .Telefone }}</div>
+            </div>
+        </div>
+
+
+        <div style="color: #828282;padding: 10px 0 10px 20px">
+            <div>
+                <b>
+                    <div style="text-transform: uppercase;">e-mail:</div>
+                </b>
+                <div>{{ .Email }}</div>
+            </div>
+        </div>
+
+        <div style="color: #828282;padding: 10px 0 10px 20px">
+            <div>
+                <b>
+                    <div style="text-transform: uppercase;">assunto:</div>
+                </b>
+                <div>{{ .Assunto }}</div>
+            </div>
+        </div>
+
+        <div style="color: #828282;padding: 10px 0 10px 20px">
+            <div>
+                <b>
+                    <div style="text-transform: uppercase;">mensagem:</div>
+                </b>
+                <div>{{ .Texto }}</div>
+            </div>
+        </div>
+
+        <div class="separador-cinza"></div>
+
+
+        <div class="img-inferior" style="
+            margin-top: 10px;
+            max-height: 700px;
+        ">
+            <img src="https://res.cloudinary.com/qop/image/upload/q_auto/v1606527161/email-banner_k0qcmk.jpg" class="img-inferior__img" alt="" style="
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        ">
+        </div>
+
+        <div class="alerta-email">
+            Enviado por <b>qop</b> <br> Se deseja não receber mais mensagens como esta, <b>clique aqui</b>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

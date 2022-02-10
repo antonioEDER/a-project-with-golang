@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Confirmar conta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/index.css'>
+</head>
+
+<body>
+    <div>
+        <div class="top-email" style=" width: 100%;
+        height: 330px;
+        background: #F7FAFF;">
+            <div class="top-email__img" style="padding: 50px 0 50px 20px;">
+                <img width="120" src="https://res.cloudinary.com/qop/image/upload/c_scale,w_120/v1606527161/logo_fbitao.png" alt="">
+            </div>
+            <div class="separador-blue" style="  width: 100%;
+        height: 0px;
+        border: 1px solid #D6E8FF;"></div>
+            <div class="top-email__desc" style=" padding: 50px 0 50px 20px;
+        max-width: 500px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 30px;
+        color: #737880;">
+                Falta pouco para você concluir o cadastro no site qop
+            </div>
+        </div>
+
+        <div class="nome-cliente" style="padding: 30px 0 30px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 30px;
+        color: #2F80ED;">
+            Olá, <b> {{.Name}}</b>
+        </div>
+
+        <div class="email-desc" style="   padding: 0px 0 10px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #738079;">
+            Este e-mail é referente a sua solicitação de cadastro no portal qop.
+        </div>
+
+        <br>
+
+
+
+        <div class="email-desc" style="
+        padding: 0px 0 10px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #738079;">
+           Esse é seu código da confirmação.
+        </div>
+
+        <div
+        style="margin: 0px 0 10px 20px;
+        text-align: center;
+        border-style: hidden;
+        border-color: initial !important;
+        width: 288px;
+        height: 52px;
+        background: #4caf50;
+        color: white !important;
+        font-weight: bold;
+        border-radius: 6px;
+        display: grid;
+        padding: 12px 0px 0px 0px;
+        font-size: 23px;
+        align-items: center;"
+        >
+        {{ .Cod_Confirmacao }}
+
+        </div>
+
+        <div
+            style="
+                padding: 10px 0px 10px 20px;
+                max-width: 500px;
+                font-family: Helvetica;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 30px;
+                color: #737880
+            "
+        >
+            OU
+        </div>
+
+        <div class="email-desc" style="
+        padding: 0px 0 0px 20px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #738079;">
+           Clique no botão abaixo para confirmar a conta.
+        </div>
+
+        <div>
+        <a href="{{ .Url }}/confirmar-conta/{{ .Token }}" target="_blank" rel="noopener noreferrer"
+            style="
+                color: white !important;
+                text-decoration: inherit;
+
+            ">
+            <div
+            style="margin: 10px 0 30px 20px;
+            text-align: center;
+            border-style: hidden;
+            border-color: initial !important;
+            width: 288px;
+            height: 52px;
+            background: #2F80ED;
+            color: white !important;
+            font-weight: bold;
+            border-radius: 6px;
+            display: grid;
+            padding: 21px 0px 0px 0px;
+            font-size: 18px;
+            align-items: center;"
+            >
+            Confirmar
+
+            </div>
+        </a>
+        </div>
+
+        <div class="link-email" style="
+            margin: 30px 0 30px 20px;
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: #738079;
+       ">
+            Ou copie e cole o link em seu navegador <br>
+            {{.Url}}/confirmar-conta/{{.Token}}
+        </div>
+
+        <div class="separador-cinza"></div>
+
+        <div class="alerta-email" style="
+            margin: 30px 0 30px 20px;
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: #738079;
+        ">
+            Obs.: O link acima será válido pelas próximas 24 horas! <br> Obs.: Caso não tenha feito essa solicitação,
+            favor desconsiderar esse e-mail.
+        </div>
+
+
+        <div class="img-inferior" style="
+            margin-top: 10px;
+            max-height: 700px;
+        ">
+            <img src="https://res.cloudinary.com/qop/image/upload/q_auto/v1606527161/email-banner_k0qcmk.jpg" class="img-inferior__img" alt="" style="
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+        ">
+        </div>
+
+        <div class="alerta-email">
+            Enviado por <b>qop</b> <br> Se deseja não receber mais mensagens como esta, <b>clique aqui</b>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

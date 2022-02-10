@@ -1,0 +1,13 @@
+/config/*.json
+/vendor
+/logs
+
+/.idea
+/.vscode
+Makefile
+Dockerfile
+docker-compose.yaml
+
+*.txt
+*.log
+__debug_bin

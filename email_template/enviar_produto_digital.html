@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/index.css'>
+</head>
+
+<body>
+    <div>
+        {{ range .Itens }}
+
+        <div style="width:100%;">
+            <div
+                style="background-color: #00062a;font-family: 'Roboto', sans-serif;width: 670px;height: 250px;border: 2px solid grey;border-radius: 10px; margin-bottom: 70px;">
+                <div style="padding: 20px;float: left;width: 270px;height: 200px;">
+                    <div style="text-align: center; width: 100%;">
+                        <div style="background-color: white; text-align: center; padding: 3px; width: 105px;">
+                            <img height="100px" width="105px" src="data:image/jpeg;base64,{{ .QrCode }}" />
+                        </div>
+                        <br>
+                        <div style="text-align: left">
+                            <div style="margin-bottom: 5px;color: white;">Evento: <span style="font-weight: bold;">{{
+                                    .Descricao }}</span></div>
+                            <div style="margin-bottom: 5px;color: white;">Data: data_expiracao</div>
+                            <div id="dataEvento" style="margin-bottom: 5px;color: white;">Local: local_evento</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;float: right;width: 265px;height: 250px;border-left: 5px dotted white;">
+                    <div style="font-weight: bold; color: white; margin-top: 5px;">Nº: <span>{{ .ID }}</span></div>
+                    <img style="margin: 10px;border-radius: 10px;width: 200px !important;height: auto !important;"
+                        class="ingresso__box1-imagem"
+                        src="https://storage.googleapis.com/media-qop/imagens_produtos/{{ .Imagens_Diretorio }}" alt="">
+                </div>
+            </div>
+            {{end}}
+        </div>
+</body>
+
+</html>

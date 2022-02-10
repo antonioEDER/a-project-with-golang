@@ -1,0 +1,888 @@
+===============================================================
+FUNCOES
+
+address
+    criarEnderecoComUsuarioJaCriado
+        *CreateAddressWithUserAlreadyCreated ok
+
+    criarEnderecoComUsuarioNaoCriado
+        *CreateUserAddressNotCreated ok
+
+    criarEndereco
+        *CreateAddress ok
+
+    editarEnderecoComoPrincipal
+        *AlterddressMain ok
+
+    editarEndereco
+        *Alterddress ok
+
+    getCepParceiro
+        *SearchPartnerZip ok
+
+    getCepCliente
+        *SearchClientZip ok
+
+    getEndrecoCliente
+        *SearchAddress ok
+
+    getEnderecosPorCliente
+        *SearchAddressForUser ok
+
+ 
+
+employees
+    create
+        *CreateEmployees
+
+    index
+         *SearchEmployees
+
+    listarFuncionariosPordescricao
+         *SearchEmployeesForDescription
+
+    AlterFuncionario
+        *AlterEmployees
+
+images
+    buscarImagens
+        *SearchImages
+
+    DesativarImagensDoProduto
+        *DisableImage
+
+    salvarImagem
+        *CreateImage
+
+ordereds
+    index
+        *SearchOrder
+
+    pedidoDetalhado
+        *SearchOrderDetailed
+
+    pedidoParceiro
+        *SearchOrderForPartner
+
+    listarPedidosRealizados
+        *SearchOrdersAccepted
+
+    buscarPedidosPorFiltros
+        * SearchOrdersForFilters
+
+    pagarNaEntrega
+        *CreateOrderForPayCash
+
+    criarPedido
+        *CreateOrder
+
+    listarPedidosUsuario
+        *SearchOrderForUser
+
+    tiposPedidos
+        *SearchOrderTypes
+
+    listarStatus
+        *SearchOrderStatus
+        
+    listarPedidosNovos
+        *SearchOrdersNews
+
+    AlterarStatusPedido
+        *AlterOrderStatus
+
+    AlterarCodigoRastreamento
+        *AlterOrderTrackingCode
+    
+    AlterarStatusVisualizacao
+        *AlterOrderVisualization
+
+    Cancelar
+        *CancelOrder
+
+    gerarCsvPedidos
+        *GenerateCsvOrders
+
+partners
+    buscarSugestoesDeParceirosPorProximidade
+        *SearchPartnersFromProximity
+
+    validarSeParceiroExiste
+        *ExistPartner
+
+
+    buscarParceiro
+        *SearchPartner
+
+    buscarTiposParceiros
+        *SearchPartnerTypesActives
+
+
+    listarParceirosParaUsuario
+        *SearchPartnerForUsuario
+
+    ListarParceiros
+        *SearchPartnersAll
+
+    ListarParceirosPorDescricao
+        *SearchPartnersForDescription
+
+    ListarTiposParceiros
+        *SearchPartnerTypesAll
+
+    criarParceiro
+        *CreatePartner
+
+    alterarHorariosFuncionamento
+        *AlterHoursOfOperation
+
+    alterarParceiros
+        *AlterPartner
+
+    alterarPlanos
+        *AlterPlanPartner
+    
+    gravarPlanos
+        *CreatePlanPartner
+
+    buscarPlanosPorParceiro
+        *SearchPlansPartners
+
+    ResumoFinanceiro
+        *SearchFinancialSummary
+
+    ResumoFinanceiroADM
+        *SearchADMFinancialSummary
+
+    cadastrarRamoAtividade
+        *CreateRangeActivity
+
+    alterarRamoAtividade
+        *AlterRangeActivity
+
+    FaturaParceiroADM
+        *SearchInvoicePartnerADM
+
+    createPotenciaisParceiros
+        *CreatePotentialPartners
+
+payments/pag_seguro
+    pagamentoPagSeguro
+        *PaymentPagSeguro
+
+    gerarSessao
+        *GenerateSessionPagSeguro
+
+    checkout
+        *CheckoutPagSeguro
+
+    alterarStatusPagSeguro
+        *AlterStatusPagSeguro
+
+    consultaPagamentoPagSeguro
+        *SearchPaymentPagSeguro
+
+payments/pix
+    DEIXAR POR ULTIMO
+
+payments/pic_pay
+        checkout
+            *Checkout
+        
+        consultaPagamentoPicPay
+            *SearchPayment
+        
+        cancelarPagamentoPicPay
+            *cancelpayment
+
+products
+    buscarSugestoesDeCategoriaPorProximidade
+        *SearchCategorySuggestionsByProximity
+
+    buscarDepartamentosMarcasCategoria
+        *SearchDepartmentsBrandsCategory
+    
+    gerarCsvProdutosParceiro
+        *GenerateCsvProductsForPartner
+
+    gerarCsvProdutoCompostoParceiro
+        *GenerateCsvProductCompoundForPartner
+
+    listarProdutosPorParceiro
+        *SearchProductsForPartner
+
+    buscaProdutoDimensoesPorIDPorParceiro
+        *SearchProductDimensionsByIdForPartner
+    
+    listarProdutosPordescricao
+        *SearchProductsByDescription
+
+    buscarProdutosPorParceiroEnome
+        *SearchProductsByNameForPartner
+        
+    buscarProdutosPorFiltros
+        *SearchProductsByFilters
+
+    dadosParaCadastrosDeProdutos
+        *SearchDataforProducs
+    
+    SalvarProdutoComposto
+        *CreateCompositeProduct
+
+    AlterarProdutoComposto
+        *AlterCompositeProduct
+
+    BuscarProdutoComposto
+        *SearchCompoundProduct
+
+    BuscarProdutoCompostoPorId
+        *SearchProductCompositeById
+
+    CriarProduto
+        *CreateProduct
+
+    ListarMarca
+        *SearchBrand
+
+    ListarCategoria
+        *SearchCategory
+
+    ListarDepartamento
+        *SearchDepartment
+
+    cadastrarMarca
+        *CreateBrand
+
+    cadastrarDepartamento
+        *CreateDepartment
+    
+    cadastrarCategoria
+        *CreateCategory
+
+    AlterarMarca
+        *AlterBrand
+
+    AlterarCategoria
+        *AlterCategory
+
+    AlterarDepartamento
+        *AlterDepartment
+
+    buscarProdutoPorCodigoDeBarras
+        *SearchProductByBarCode
+
+    alterarProduto
+        *AlterProduct
+    
+    addFavorito
+        *CreateFavorite
+
+    upFavorito
+        *AlterFavorite
+    
+    buscarFavoritos
+        *SearchFavorite
+
+    cubagemProdutosPorDimensao
+        *SearchCubageOfProductsByDimension
+
+    BuscarProdutoParaCatalogo
+        *SearchProductForCatalog
+
+send_email
+
+    enviarEmailComProposta
+        *SendEmailWithProposal
+
+    enviarEmailComFatura
+        *SendEmailWithInvoice
+
+    contaCriada
+        *SendAccountCreate
+
+    confirmarConta
+        *SendAccountConfirmation
+        
+    recuparSenha
+        *SendRecoverPassword
+
+    enviarPedidos
+        *SendOrdersCreated
+
+    enviarContato
+        *SendMessageByClient
+
+    enviarMudancaStatusPedido
+        *sendAlterationStatusOrder
+
+    enviarPropostaPedido
+        *SendPartnerProposalToUser
+    
+    enviarFaturaParceiro
+        *SendInvoicePartner
+
+    enviarMudancaStatusPedidoCancelado
+        *SendAlterationStatusOrderCancelled
+
+    enviarEmailParceiro
+    enviarEmailParaPotencialParceiro
+        *SendNewLeadsPartner
+
+tools
+tools/google
+    distanciaKmGoogleMaps
+        *DistanceBetweenPonters
+
+    senPushNotification
+        *SenPushNotification
+
+    calcularDistanciaEntreidEnderecos
+        *DistanceBetweenPonters ok
+
+    viacep
+        *SearcheAddressViaCep
+
+    googleApisPostalCode
+        *SearchAddressGoogleApisPostalCode
+------
+    descricaoServicoCorreios
+        *SearchServiceCorreiosForDescription
+
+    freteCorrreiosPorServico
+        *SearcheServiceCorreiosForService
+
+    freteCorreiosTotal
+        *SearchServiceCorreiosAmount
+
+    freteCorreios
+        *SearchServiceCorreios
+
+  
+
+
+transports
+    create
+        *CreateTransport
+    
+    listarTransportadoras
+        *SearchTransports
+    
+    listarTransportadorasAtivas
+        *SearchTransportsActive
+
+    alterarTransportadora
+        *AlterTransport
+    
+    createParceirosTranportadoras
+        *CreatePartnersToTransport
+    
+    createMany
+        *CreateTransports
+
+    createSingle
+        *CreateTransportLinkPartner
+
+    desabilitarTransportadorasQueNaoForemEssas
+        *AlterActiveTransport
+
+    listarTransportadorasAtivasPorParceiro
+        *SearchTransportsByActiveForPartner
+
+--
+    create
+        *CreateService
+
+    list
+        *SearchServices
+
+    findByDescription
+         *SearchServicesByDescription
+
+    alter
+        *AlterService
+
+    findServiceByIdParceiro
+        *SearchServicesByIdPartner
+
+    getValueTransporter
+        *SearchServiceByMoneyTransporter
+
+--
+    create
+        *CreateServiceToKM
+
+    alter
+        *AlterServiceToKM
+
+    listByServiceId
+        *SearchServiceToKmById
+
+    getPrecKmById
+        *SearchServiceByIdToServiceToKM
+
+    getServiceByKmAndIdServiceTransporter
+        *SearchServiceByKmAndIdServiceTransporter
+-- 
+
+    create
+        *CreateServiceToMoney
+
+    alter
+        *AlterServiceToMoney
+
+    listByServiceId
+        *SearchServiceToMoneyById
+
+    getPrecKmById
+        *SearchServiceByIdToServiceToMoney
+
+    getServiceByKmAndIdServiceTransporter
+        *SearchServiceByMoneyAndIdServiceTransporter
+    
+users
+   confirmarConta
+        *ConfirmAccount
+
+    pushNotificationWeb
+        *CreatTokenpushNotificationForWeb
+
+    pushNotificationApp
+        *CreatTokenpushNotificationForApp
+
+    BuscarUsuario
+        *SearchUser
+
+    criarUsuario
+        *CreateUser
+    
+    createOfertasPorEmail
+        *CreateLeadsForOffers
+
+    recuperarSenha
+        *RecoverPassword
+
+    novaSenha
+        *CreateNewPassword
+    
+    validarCodigoCriacaoDeConta
+        *ValidateAccountCreationByCode
+
+    exists
+        *SearchUserExists
+
+    alterarDados
+        *AlterDataUser
+
+===============================================================
+ROTAS
+
+ApisExternal
+ - Separa por contexto
+
+
+EnderecosController
+EnviarEmailsController
+FuncionariosController
+FusoHorarioController
+    -tools
+ToolBoxController
+    -tools
+ParceiroController
+PedidosController
+UsuariosController
+ProdutosController
+
+ServicosController
+
+TransportadorasController
+ParceiroTransportadoraController
+PrecKmController
+PrecValController
+
+PagamentosController
+PagSeguroController
+PicPayController
+PixEstaticoController
+
+
+/api-v2/usuario
+Route::get('/enderecos-por-usuario', [EnderecosController::class, 'getEnderecosPorCliente'])->middleware('authUsuario');
+/address
+
+Route::put('/endereco', [EnderecosController::class, 'editarEndereco'])->middleware('authUsuario');
+/address
+
+Route::post('/endereco', [EnderecosController::class, 'criarEnderecoComUsuarioJaCriado'])->middleware('authUsuario');
+/address
+
+Route::post('/endereco-principal', [EnderecosController::class, 'editarEnderecoComoPrincipal']);
+/activate-main
+
+
+Route::get('/distancia-endereco', [EnderecosController::class, 'calcularDistanciaEntreidEnderecos']);
+/distance-between-ponters
+
+===============================================================
+/api/usuario
+Route::get('/', [UsuariosController::class, 'BuscarUsuario']);
+Route::post('/', [UsuariosController::class, 'criarUsuario']);
+Route::put('/', [UsuariosController::class, 'edit'])->middleware('authUsuario');
+------
+Route::put('/dados-cadastrais', [UsuariosController::class, 'alterarDados'])->middleware('authUsuario');
+removido para deixar tudo no put
+
+Route::get('/usuario-existe', [UsuariosController::class, 'exists']);
+/exists
+
+Route::get('/validar-codigo', [UsuariosController::class, 'validarCodigoCriacaoDeConta']);
+/validate-code-email
+
+Route::post('/confirma-cadastro', [UsuariosController::class, 'confirmarConta']);
+confirm-registration
+
+Route::post('/recuperar-senha', [UsuariosController::class, 'recuperarSenha']);
+/recover-password
+
+Route::post('/nova-senha', [UsuariosController::class, 'novaSenha']);
+/new-password
+
+Route::post('/login', [UsuariosController::class, 'token']);
+
+
+Route::post('/push-notification-web', [UsuariosController::class, 'pushNotificationWeb']);
+Route::post('/push-notification-app', [UsuariosController::class, 'pushNotificationApp']);
+
+
+===============================================================
+/api/usuario
+
+Route::get('/produtos', [ProdutosController::class, 'listarProdutosPorParceiro']);
+Route::post('/produtos', [ProdutosController::class,'CriarProduto'])->middleware('authParceiro');
+Route::put('/produto', [ProdutosController::class,'alterarProduto'])->middleware('authParceiro');
+
+Route::get('/produto-composto-por-id', [ProdutosController::class, 'BuscarProdutoCompostoPorId']);
+compound-to-id
+
+Route::get('/produto-favorito', [ProdutosController::class, 'buscarFavoritos'])->middleware('authUsuario');
+/favorite
+
+Route::get('/produtos-por-nome', [ProdutosController::class, 'buscarProdutosPorParceiroEnome']);
+/to-name
+
+Route::get('/produtos-por-filtros', [ProdutosController::class, 'buscarProdutosPorFiltros']);
+/to-filters
+
+Route::get('/produtos-para-catalogo', [ProdutosController::class, 'BuscarProdutoParaCatalogo']);
+to-catalog
+
+Route::get('/produto-por-codigos-de-barras', [ProdutosController::class,'buscarProdutoPorCodigoDeBarras'])->middleware('authParceiro');
+/to-barcodes
+
+Route::get('/dados-para-cadastros-de-produtos', [ProdutosController::class,'dadosParaCadastrosDeProdutos'])->middleware('authParceiro');
+/to-registration
+
+Route::get('/produtos-por-descricao', [ProdutosController::class,'listarProdutosPordescricao'])->middleware('authParceiro');
+/to-description
+
+Route::get('/produto-composto', [ProdutosController::class,'BuscarProdutoComposto'])->middleware('authParceiro');
+/compound
+
+Route::get('/gerar-csv-produtos', [ProdutosController::class,'gerarCsvProdutosParceiro']);
+Route::get('/gerar-csv-produtos-composto', [ProdutosController::class,'gerarCsvProdutoCompostoParceiro']);
+Route::get('/marca', [ProdutosController::class,'ListarMarca'])->middleware('authParceiro');
+Route::get('/categoria', [ProdutosController::class,'ListarCategoria'])->middleware('authParceiro');
+Route::get('/departamento', [ProdutosController::class,'ListarDepartamento'])->middleware('authParceiro');
+
+
+Route::post('/produto-favorito', [ProdutosController::class, 'addFavorito'])->middleware('authUsuario');
+/favorite
+
+Route::post('/marca', [ProdutosController::class,'cadastrarMarca'])->middleware('authParceiro');
+/brand
+
+Route::post('/categoria', [ProdutosController::class,'cadastrarCategoria'])->middleware('authParceiro');
+/category
+
+Route::post('/departamento', [ProdutosController::class,'cadastrarDepartamento'])->middleware('authParceiro');
+/department
+
+Route::post('/produto-composto', [ProdutosController::class,'SalvarProdutoComposto'])->middleware('authParceiro');
+
+Route::put('/marca', [ProdutosController::class,'AlterarMarca'])->middleware('authParceiro');
+Route::put('/categoria', [ProdutosController::class,'AlterarCategoria'])->middleware('authParceiro');
+Route::put('/departamento', [ProdutosController::class,'AlterarDepartamento'])->middleware('authParceiro');
+Route::put('/produto-favorito', [ProdutosController::class, 'upFavorito'])->middleware('authUsuario');
+================================================================
+
+
+Route::post('/parceiros', [ParceiroController::class,'criarParceiro'])->middleware('authAdm');
+/partner
+
+Route::post('/parceiro', [ParceiroController::class,'alterarParceiros'])->middleware('authAdm');
+/partner
+
+Route::post('/ramo-parceiros', [ParceiroController::class,'cadastrarRamoAtividade'])->middleware('authAdm');
+/Range
+
+Route::post('/faturas', [ParceiroController::class,'enviarEmailComFatura'])->middleware('authAdm');
+/commercial-invoice
+
+Route::post('/api/potenciais-parceiros', 'ParceiroController@createPotenciaisParceiros');
+/leads-partner
+
+Route::put('/horarios-funcionamento', [ParceiroController::class,'alterarHorariosFuncionamento'])->middleware('authParceiro');
+working-hours
+
+Route::put('/ramo-parceiros', [ParceiroController::class,'alterarRamoAtividade'])->middleware('authAdm');
+/Range
+
+Route::get('/parceiro', [ParceiroController::class, 'buscarParceiro']);
+partner
+
+Route::get('/parceiros', [ParceiroController::class,'ListarParceiros'])->middleware('authAdm');
+/list/private
+
+Route::get('/parceiros', [ParceiroController::class, 'listarParceirosParaUsuario']);
+list/public
+
+Route::get('/departamentos-marcas-categorias', [ParceiroController::class, 'buscarDepartamentosMarcasCategoria']);
+/departments-brands-categories
+
+Route::get('/sugestoes-parceiros-por-proximidade', [ParceiroController::class, 'buscarSugestoesDeParceirosPorProximidade']);
+/proximity
+
+Route::get('sugestoes-categoria-por-proximidade', [ParceiroController::class, 'buscarSugestoesDeCategoriaPorProximidade']);
+/proximity-to-category
+
+Route::get('/ramo-parceiros', [ParceiroController::class, 'buscarTiposParceiros']);
+/Range/public
+
+Route::get('/ramo-parceiros', [ParceiroController::class,'ListarTiposParceiros'])->middleware('authAdm');
+enviar parametro ativo = true or false
+/Range/private
+
+Route::get('/resumo-financeiro', [ParceiroController::class,'ResumoFinanceiro'])->middleware('authParceiro');
+/financial-summary
+
+Route::get('/parceiros-descricao-cnpj', [ParceiroController::class,'ListarParceirosPorDescricao'])->middleware('authAdm');
+/by-name-cnpj/private
+
+Route::get('/resumo-financeiro', [ParceiroController::class,'ResumoFinanceiroADM'])->middleware('authAdm');
+financial-summary-to-adm
+
+
+Route::get('/planos', [ParceiroController::class,'buscarPlanosPorParceiro'])->middleware('authAdm');
+/plans/private
+
+Route::get('/faturas', [ParceiroController::class,'FaturaParceiroADM'])->middleware('authAdm');
+/commercial-invoice/private
+
+Route::get('/validar-se-parceiro-existe', [ParceiroController::class,'validarSeParceiroExiste'])->middleware('authAdm');
+/exist
+
+================================================================
+Route::post('/pedido', [PedidosController::class, 'criarPedido'])->middleware('authUsuario');
+/order
+
+Route::put('/pedido', [PedidosController::class, 'Cancelar'])->middleware('authUsuario');
+/order
+
+Route::get('/pedido', [PedidosController::class, 'index'])->middleware('authUsuario');
+/order
+
+Route::post('/criar-pedido', [PedidosController::class, 'pagarNaEntrega'])->middleware('authUsuario');
+/create
+
+Route::post('/pedido-email-proposta', [PedidosController::class,'enviarEmailComProposta'])->middleware('authParceiro');
+/send-email-proposal
+
+Route::put('/alterar-status-pedido', [PedidosController::class,'AlterarStatusPedido'])->middleware('authParceiro');
+/status
+
+Route::put('/alterar-status-visualizado', [PedidosController::class,'AlterarStatusVisualizacao']);
+/status-visualized
+
+Route::get('/pedidos', [PedidosController::class, 'listarPedidosUsuario'])->middleware('authUsuario');
+/list
+
+Route::get('/pedido-detalhes', [PedidosController::class, 'pedidoDetalhado'])->middleware('authUsuario');
+/details
+
+Route::get('/categorias-pedidos', [PedidosController::class, 'tiposPedidos']);
+/categories
+
+Route::get('/pedidos', [PedidosController::class,'listarPedidosRealizados'])->middleware('authParceiro');
+/list-accepted
+
+Route::get('/pedidos-por-filtros', [PedidosController::class,'buscarPedidosPorFiltros'])->middleware('authParceiro');
+/for-filter
+
+Route::get('/pedido', [PedidosController::class,'pedidoParceiro'])->middleware('authParceiro');
+/list-for-partner
+
+Route::get('/pedidos-novos', [PedidosController::class,'listarPedidosNovos']);
+/news
+
+Route::get('/gerar-csv-pedidos', [PedidosController::class,'gerarCsvPedidos']);
+/generate-csv
+
+Route::get('/api/listar-status', 'PedidosController@listarStatus');
+/list-status
+
+
+================================================================
+Route::get('/funcionarios', [FuncionariosController::class,'index'])->middleware('authParceiro');
+/employee
+Route::get('/funcionarios-por-descricao', [FuncionariosController::class,'listarFuncionariosPordescricao'])->middleware('authParceiro');
+/description
+Route::put('/funcionarios', [FuncionariosController::class,'AlterFuncionario'])->middleware('authParceiro');
+/employee
+Route::post('/funcionarios', [FuncionariosController::class,'create'])->middleware('authParceiro');
+================================================================
+Transportadora
+
+Route::post('/transportadora', [TransportadorasController::class,'create'])->middleware('authAdm');
+/transport
+
+Route::put('/transportadora', [TransportadorasController::class,'alterarTransportadora'])->middleware('authAdm');
+/transport
+
+Route::get('/transportadoras-por-parceiro', [ParceiroTransportadoraController::class,'listarTransportadorasAtivasPorParceiro'])->middleware('authAdm');
+/list-for-partner
+
+Route::get('/transportadoras', [TransportadorasController::class,'listarTransportadoras'])->middleware('authAdm');
+/list
+
+Route::get('/transportadoras-ativas', [TransportadorasController::class,'listarTransportadorasAtivas'])->middleware('authAdm');
+/active
+
+Route::post('/servico', [ServicosController::class,'create'])->middleware('authAdm');
+/transport/service
+
+Route::put('/servico', [ServicosController::class,'alter'])->middleware('authAdm');
+/transport/service
+
+Route::get('/servicos', [ServicosController::class,'list'])->middleware('authAdm');
+/transport/service
+
+Route::get('/servicos-por-descricao', [ServicosController::class,'findByDescription'])->middleware('authAdm');
+/service/description
+
+Route::get('/servicos-por-parceiro', [ServicosController::class,'findServiceByIdParceiro']);
+/service-for-partner
+
+Route::post('/prec-km', [PrecKmController::class,'create'])->middleware('authAdm');
+service-km
+
+Route::put('/prec-km', [PrecKmController::class,'alter'])->middleware('authAdm');
+service-km
+
+Route::get('/prec-km-por-id-servico', [PrecKmController::class,'listByServiceId'])->middleware('authAdm');
+/service-km-by-id
+
+Route::post('/prec-val', [PrecValController::class,'create'])->middleware('authAdm');
+/service-amount
+Route::put('/prec-val', [PrecValController::class,'alter'])->middleware('authAdm');
+/service-amount
+Route::get('/prec-val-por-id-servico', [PrecValController::class,'listByServiceId'])->middleware('authAdm');
+/service-amount-by-id
+
+Route::post('/parceiro-transportadora', [ParceiroTransportadoraController::class,'createMany'])->middleware('authAdm');
+/create-for-partner
+
+Route::put('/alterar-codigo-rastreamento-pedido', [PedidosController::class,'AlterarCodigoRastreamento'])->middleware('authParceiro');
+/change-code-tracking-to-order
+
+Route::get('/api/frete-correios-servico', 'ApisExternal@freteCorrreiosPorServico');
+/service-correios
+
+Route::get('/api/frete-correios', 'ApisExternal@freteCorreios');
+/service-amount-correios
+
+Route::get('/api/frete-correios-teste', 'ApisExternal@testeCorreios');
+================================================================
+
+Route::post('/alterar-status-pagseguro', [PagamentosController::class, 'alterarStatusPagSeguro']);
+/pagseguro-init-session
+
+Route::post('/iniciar-sessao-pagseguro', [PagSeguroController::class, 'gerarSessao']);
+/pagseguro-alter-status
+
+Route::post('/checkout-pagseguro', [PagSeguroController::class, 'checkout']);
+/pagseguro-checkout
+
+Route::post('/checkout-picpay', [PicPayController::class, 'checkout']);
+/picpay-checkout
+
+Route::post('/alterar-status-picpay', [PicPayController::class, 'pagamentoPicPay']);
+/picpay-alter-status
+
+Route::post('/checkout-pix', [PixEstaticoController::class, 'checkout']);
+/pix-checkout
+
+Route::post('/alterar-status-pix', [PixEstaticoController::class, 'pagamentoPix']);
+/pix-alter-status
+
+================================================================
+Route::get('/buscar-imagens', [ProdutosController::class,'buscarImagens'])->middleware('authParceiro');
+/image
+
+Route::put('/desativar-imagem', [ProdutosController::class,'DesativarImagensDoProduto'])->middleware('authParceiro');
+/image
+
+Route::post('/imagem-produto', [ProdutosController::class,'salvarImagem'])->middleware('authParceiro');
+/image
+
+=======================
+send_emails
+Route::post('/api/ofertas-por-email', 'UsuariosController@createOfertasPorEmail');
+/leads-for-offers
+Route::post('/api/contato', 'UsuariosController@enviarContato');
+/contact-by-client
+
+=========================
+apis_externals
+
+
+Route::get('/api/viacep', 'ApisExternal@viacep');
+/viacep
+Route::get('/api/api-google-apis-postal-code', 'ApisExternal@googleApisPostalCode');
+/google-postal-code
+
+
+--------------------
+CRIANDO MODELS GOLANGES
+ordereds
+
+partners
+ partners/employees
+ partners/transports
+
+payments
+ payments/pagseguro
+ payments/picpay
+ payments/pix
+
+persons
+ persons/contacts
+ persons/physicals
+ persons/legals
+ persons/status
+ persons/users
+
+products
+ images
+
+ 
+
+sudo ufw allow 9200/tcp
+sudo ufw allow 8887/tcp
+
+
+#list process running on specified port (here 80, change to your port)
+sudo lsof -i:80
+
+#kill process on specified port (here 80, change to your port)
+sudo kill $(sudo lsof -t -i:80)
+
+https://medium.com/wesionary-team/automatically-generate-restful-api-documentation-in-golang-76927f8f8935
